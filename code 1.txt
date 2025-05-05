@@ -1,0 +1,245 @@
+int pot=0;
+void setup() 
+{
+pinMode(2,OUTPUT);
+pinMode(3,OUTPUT);
+pinMode(4,OUTPUT);
+pinMode(5,OUTPUT);  // kavin technicals
+pinMode(6,OUTPUT);
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+pinMode(9,OUTPUT);
+pinMode(10,OUTPUT);
+pinMode(11,OUTPUT);
+pinMode(12,OUTPUT);
+pinMode(13,OUTPUT);
+pinMode(A0,OUTPUT);
+pinMode(A1,OUTPUT);
+pinMode(A2,OUTPUT);
+pinMode(A3,OUTPUT);
+pinMode(A5,INPUT);
+digitalWrite(A2,HIGH);
+delay(100);
+digitalWrite(A3,HIGH);
+delay(100);
+digitalWrite(2,HIGH);
+delay(100);
+digitalWrite(3,HIGH);
+delay(100);
+digitalWrite(4,HIGH);
+delay(100);
+digitalWrite(5,HIGH);
+delay(100);
+digitalWrite(6,HIGH);
+delay(100);
+digitalWrite(7,HIGH);
+delay(100);
+digitalWrite(8,HIGH);
+delay(100);
+digitalWrite(9,HIGH);
+delay(100);
+digitalWrite(10,HIGH);
+delay(100);
+digitalWrite(11,HIGH);
+delay(100);
+digitalWrite(12,HIGH);
+delay(100);
+digitalWrite(13,HIGH);
+delay(100);
+digitalWrite(A0,HIGH);
+delay(100);
+digitalWrite(A1,HIGH);
+delay(500);
+digitalWrite(A1,LOW);
+delay(100);
+digitalWrite(A0,LOW);
+delay(100);
+digitalWrite(13,LOW);
+delay(100);
+digitalWrite(12,LOW);
+delay(100);
+digitalWrite(11,LOW);
+delay(100);
+digitalWrite(10,LOW);
+delay(100);
+digitalWrite(9,LOW);
+delay(100);
+digitalWrite(8,LOW);
+delay(100);
+digitalWrite(7,LOW);
+delay(100);
+digitalWrite(6,LOW);
+delay(100);
+digitalWrite(5,LOW);
+delay(100);
+digitalWrite(4,LOW);
+delay(100);
+digitalWrite(3,LOW);
+delay(100);
+digitalWrite(2,LOW);
+delay(100);
+digitalWrite(A3,LOW);
+delay(100);
+digitalWrite(A2,LOW);
+delay(100);
+Serial.begin(9600);
+}
+void loop() {
+  int pot=analogRead(A5);
+  Serial.println(pot);
+  delay(100);
+  if (pot>=1)
+  {
+    digitalWrite(A2,HIGH);
+    delay(50);
+    digitalWrite(A3,HIGH);
+  }
+  else
+  {
+    digitalWrite(A2,LOW);
+    delay(30);
+    digitalWrite(A3,LOW);
+
+  }
+  if (pot>=6)
+  {
+    digitalWrite(2,HIGH);
+    
+ }
+  else
+  {
+    digitalWrite(2,LOW);
+    
+     }
+ if (pot>=19)
+ {digitalWrite(3,HIGH);
+    
+}
+ else
+  {
+    digitalWrite(3,LOW);
+    
+     }
+  if (pot>=45)
+  {
+    digitalWrite(4,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(4,LOW);
+    
+     }
+ if (pot>=175)
+  {
+    digitalWrite(5,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(5,LOW);
+    
+     }
+     if (pot>=330)
+  {
+    digitalWrite(6,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(6,LOW);
+    
+     }
+     if (pot>=430)
+  {
+    digitalWrite(7,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(7,LOW);
+    
+     }
+     if (pot>=560)
+  {
+    digitalWrite(8,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(8,LOW);
+  }
+    
+    
+  if (pot>=660)
+  {
+    digitalWrite(9,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(9,LOW);
+    
+     }
+     if (pot>=830)
+  {
+    digitalWrite(10,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(10,LOW);
+    
+     }
+     if (pot>=930)
+  {
+    digitalWrite(11,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(11,LOW);
+    
+     }
+     if (pot>=1002)
+  {
+    digitalWrite(12,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(12,LOW);
+    
+     }
+     if (pot>=1016)
+  {
+    digitalWrite(13,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(13,LOW);
+    
+     }
+     if (pot>=1021)
+  {
+    digitalWrite(A0,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(A0,LOW);
+    
+     }
+      if (pot>=1023)
+  {
+    digitalWrite(A1,HIGH);
+    
+  }
+   else
+  {
+    digitalWrite(A1,LOW);
+    
+     }
+
+}
